@@ -9,14 +9,6 @@ export default function home(){
     const mainBody = document.createElement('div');
     const textMainBody = document.createElement('div');
 
-    const orderNow = document.createElement('div');
-    const textOrderNow = document.createElement('div');
-    const orderFrom = document.createElement('div');
-    const swiggy = document.createElement('div');
-    const zoma = document.createElement('div');
-
-    const footer = document.createElement('div');
-
     const content = document.getElementById('content');
 
     menu.innerHTML = '<h1>Menu</h1>';
@@ -35,22 +27,43 @@ export default function home(){
     mainBody.classList.add('mainBody');
 
     //adding text in body
-    textMainBody.innerHTML = '<h1 class = "name">Meiloorun Cafe</h1><h5 class = "subName">A Salad Cloud Kitchen</h5>';
+    textMainBody.innerHTML = '<h1 class = "name">Meiloorun Salads</h1><h5 class = "subName">A Salad Specialist</h5>';
     mainBody.appendChild(textMainBody);
 
+    //welcome Note
+    const welcome = document.createElement('div');
+    welcome.classList.add('welcome');
+    const welText = document.createElement('div');
+    welText.classList.add('welText');
+    welText.innerHTML = '<h2 class = "welTextH2">Welcome to Meilooruns</h2>';
+    const welPara = document.createElement('div');
+    welPara.classList.add('welPara');
+    welPara.innerHTML = "<p class = 'paraText'>Located on Lothal's highest peak, Meiloorun provides best Salad galaxy has to offer.<br> Free for bounty hunters!!</p>";
+    welcome.appendChild(welText);
+    welcome.appendChild(welPara);
+
     //order now section setup
+    const orderNow = document.createElement('div');
+    const textOrderNow = document.createElement('div');
+    const orderFrom = document.createElement('div');
+    const swiggy = document.createElement('div');
+    const zoma = document.createElement('div');
+    const bookTable = document.createElement('div');
+
     orderFrom.appendChild(swiggy);
     orderFrom.appendChild(zoma);
+    orderNow.appendChild(bookTable);
     orderNow.appendChild(textOrderNow);
     orderNow.appendChild(orderFrom);
-    mainBody.appendChild(orderNow);
 
     orderFrom.classList.add('orderFrom');
     orderNow.classList.add('orderNow');
     swiggy.classList.add('swiggy');
     zoma.classList.add('zoma');
+    bookTable.classList.add('bookTable');
 
-    textOrderNow.innerHTML = '<h2 class = "OrderNowText">Order Now On!</h2>';
+    bookTable.innerHTML = '<button class = "bktblbtn">Book A Table!</button>';
+    textOrderNow.innerHTML = '<h2 class = "orderNowText"> Or Order On!</h2>';
     const swiggyImg = new Image();
     swiggyImg.src = swgy;
     swiggy.appendChild(swiggyImg);
@@ -60,11 +73,15 @@ export default function home(){
     zoma.appendChild(zmtImg);
 
     //footer
-    footer.innerHTML = '<h6 class="footNote">©Meiloorun</h6>';
+    const footer = document.createElement('div');
+
+    footer.innerHTML = '<h6 class="footNote">©Meiloorun 2023</h6>';
     footer.classList.add('footer');
 
     content.appendChild(header);
     content.appendChild(mainBody);
+    content.appendChild(welcome);
+    content.appendChild(orderNow);
     content.appendChild(footer);
 
     return content;
