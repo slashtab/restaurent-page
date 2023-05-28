@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    background-color: #5e9b59;
+    color: #C7E8CA;
+}
+
+.home:hover, .menu:hover, .contact:hover{
+    color: #DDF7E3;
+}
+
+.mainBody{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(./bgSalad.png);
+    background-position: center;
+    margin: 0;
+    color: #F4F4F2;
+    padding-bottom: 10%;
+}
+
+.name{
+    margin:0;
+    font-size: clamp(2rem, 2rem + 1.5vw, 10rem);
+}
+
+.subName{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.textMainBody{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10% 10% 50px 10%;
+}
+
+img{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.orderNow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderFrom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+
+.textOrderNow{
+    color: #5e9b59; 
+}
+.swiggy{
+    width: 10%;
+    height: auto;
+}
+
+.zoma{
+    width: 10%;
+    height: auto;
+}
+
+.footer{
+    background-color: #C7E8CA;
+    color: #5D9C59;
+    display: flex;
+    justify-content: center;
+    padding: 1.5px;
+    margin: 0;
+}
+
+.footNote{
+    margin: 0;
+}
+
+.selected{
+    color: #DDF7E3;
+}

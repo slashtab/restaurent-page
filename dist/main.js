@@ -1,1 +1,1 @@
-console.log("check! Running-- cool");
+(()=>{"use strict";!function(){const e=document.createElement("div"),n=document.createElement("div"),t=document.createElement("div"),d=document.createElement("div"),c=document.getElementById("content");n.innerHTML="<h1>Menu</h1>",t.innerHTML="<h1>Home</h1>",d.innerHTML="<h1>Contact</h1>",n.classList.add("menu"),t.classList.add("home"),d.classList.add("contact"),e.classList.add("header"),e.appendChild(t),e.appendChild(n),e.appendChild(d),c.appendChild(e)}()})();
