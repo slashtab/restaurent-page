@@ -1,0 +1,44 @@
+.containerCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(#C7E8CA, white);
+}
+
+.contHeader{
+    font-family: 'Great Vibes', cursive;
+    color: #5e9b59;
+}
+
+.contInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.phEmail{
+    width: 50%;
+    border-right: 1px solid ;
+
+}
+
+.timing{
+    width: 50%;
+    padding-left: 5px;
+}
+
+.tHead{
+    margin-bottom: 0;
+}
+
+.tPara{
+    margin-top: 4px;
+}
+
+.gMap{
+    margin: 50px  0  20px 0;
+}

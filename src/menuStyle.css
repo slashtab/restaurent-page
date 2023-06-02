@@ -1,0 +1,54 @@
+
+.abtSld, .cr, .sldName, .menuHeadText{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.menuHead{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    padding-top: 20px;
+    color: #5e9b59;
+}
+
+.menuBody{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #5e9b59);
+}
+
+.containerMenu{
+    background: linear-gradient(#C7E8CA, white);
+}
+
+.menuList{
+    margin: 0 20% 0 20%;
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #5e9b59;
+    background-color: #C7E8CA;
+}
+
+.itemImage{
+    width: 150px;
+    height: auto;
+}
+
+.descContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+

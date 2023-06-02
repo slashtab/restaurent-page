@@ -2,27 +2,29 @@ import swgy from './swiggy.svg';
 import zmt from './zomato.png';
 
 export default function home(){
-    const header = document.createElement('div');
-    const menu = document.createElement('div');
-    const home = document.createElement('div');
-    const contact = document.createElement('div');
+    // const header = document.createElement('div');
+    // const menu = document.createElement('div');
+    // const home = document.createElement('div');
+    // const contact = document.createElement('div');
     const mainBody = document.createElement('div');
     const textMainBody = document.createElement('div');
+    const containerHome = document.createElement('div');
 
-    const content = document.getElementById('content');
+    //const content = document.getElementById('content');
 
-    menu.innerHTML = '<h1>Menu</h1>';
-    home.innerHTML = '<h1>Home</h1>';
-    contact.innerHTML = '<h1>Contact</h1>';
-    menu.classList.add('menu');
-    home.classList.add('home');
-    contact.classList.add('contact');
-    header.classList.add('header');
+    // menu.innerHTML = '<h1>Menu</h1>';
+    // home.innerHTML = '<h1>Home</h1>';
+    // contact.innerHTML = '<h1>Contact</h1>';
+    // menu.classList.add('menu');
+    // home.classList.add('home');
+    // contact.classList.add('contact');
+    // header.classList.add('header');
     textMainBody.classList.add('textMainBody');
+    containerHome.classList.add('containerHome');
 
-    header.appendChild(home);
-    header.appendChild(menu);
-    header.appendChild(contact);
+    // header.appendChild(home);
+    // header.appendChild(menu);
+    // header.appendChild(contact);
 
     mainBody.classList.add('mainBody');
 
@@ -38,7 +40,7 @@ export default function home(){
     welText.innerHTML = '<h2 class = "welTextH2">Welcome to Meilooruns</h2>';
     const welPara = document.createElement('div');
     welPara.classList.add('welPara');
-    welPara.innerHTML = "<p class = 'paraText'>Located on Lothal's highest peak, Meiloorun provides best Salad galaxy has to offer.<br> Free for bounty hunters!!</p>";
+    welPara.innerHTML = "<p class = 'paraText'>Located on Lothal's highest peak, Meiloorun provides best Salad, galaxy has to offer.<br> Free for bounty hunters!!</p>";
     welcome.appendChild(welText);
     welcome.appendChild(welPara);
 
@@ -78,11 +80,11 @@ export default function home(){
     footer.innerHTML = '<h6 class="footNote">©Meiloorun 2023</h6>';
     footer.classList.add('footer');
 
-    content.appendChild(header);
-    content.appendChild(mainBody);
-    content.appendChild(welcome);
-    content.appendChild(orderNow);
-    content.appendChild(footer);
+    //containerHome.appendChild(header);
+    containerHome.appendChild(mainBody);
+    containerHome.appendChild(welcome);
+    containerHome.appendChild(orderNow);
+    containerHome.appendChild(footer);
 
-    return content;
+    return containerHome;
 }
