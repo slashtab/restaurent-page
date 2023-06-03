@@ -42,3 +42,15 @@
 .gMap{
     margin: 50px  0  20px 0;
 }
+
+.lctUs{
+    background-color: #C7E8CA;
+    color: #5e9b59;
+    padding: 5px 30px 5px 30px;
+    border: solid 0.5px;
+}
+
+.lctUs:hover{
+    background-color: #5e9b59;
+    color: #C7E8CA;
+}

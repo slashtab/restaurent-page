@@ -10,7 +10,7 @@ export default function cont(){
     //Address
     const addCont = document.createElement('div');
     addCont.classList.add('addCont');
-    addCont.innerHTML = '<h2>1340 Jedi Shrine</h2><h4>ISI I76RT, Lothal</h4><button>Locate Us</button>';
+    addCont.innerHTML = '<h2>1340 Jedi Shrine</h2><h4>ISI I76RT, Lothal</h4><button class = "lctUs">Locate Us</button>';
 
     //phone email timing
     const contInfo = document.createElement('div');
